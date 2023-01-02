@@ -1,10 +1,3 @@
-* Remove the `empty` constructors for DFAs and replace them with
-  `never_match` and `always_match` constructors.
-* Consider refactoring the NFA representation such that it can be instantly
-  loaded from a `&[u8]`, just like a sparse DFA. Main downside is that this
-  could negatively impact using the NFA with deserialization costs. Before
-  doing this, we should write PikeVM and backtracking implementations so that
-  they can be benchmarked.
-* Add captures and anchors to NFA.
-* Once we're happy, re-organize the public API such that NFAs are exported
-  and usable on their own.
+version https://git-lfs.github.com/spec/v1
+oid sha256:daea9f7378f543311d657e6ef3d2a09d51e82b9e70d0026140130862c32b3c08
+size 583
